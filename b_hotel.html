@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/icon/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+<body>
+    <header>
+        <section>
+            <!-- navbar -->
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/6fcf2552b72fb67b216c2361a9f307da.png" class="logo" alt=""></a>
+                    <form class="d-flex search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Địa Điểm Du Lịch
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <li><h5 class="dropdown-item title" href="tour.html"><b>Tour Miền Bắc</b></h5></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du Lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du Lịch Hạ Long</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du Lịch Bắc Ninh</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du Lịch Phú Thọ</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du Lịch Ninh Bình</a></li>
+                                        <li><a class="dropdown-item deco" href="#" style="font-size: 10px;">Xem Thêm<i class="bi bi-chevron-double-right" style="font-size: 10px;"></i></a></li>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <li><h5 class="dropdown-item title" href="tour.html"><b>Tour Miền Trung</b></h5></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Huế</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Quảng Trị</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Quảng Bình</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Đà Nẵng</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Quảng Nam</a></li>
+                                        <li><a class="dropdown-item deco" href="#" style="font-size: 10px;">Xem Thêm<i class="bi bi-chevron-double-right" style="font-size: 10px;"></i></a></li>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <li><h5 class="dropdown-item title" href="tour.html"><b>Tour Miền Tây Nam Bộ</b></h5></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Phú Quốc</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Tiền Giang</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Cần Thơ</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Vĩnh Long</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Sóc Trăng</a></li>
+                                        <li><a class="dropdown-item deco" href="#" style="font-size: 10px;">Xem Thêm<i class="bi bi-chevron-double-right" style="font-size: 10px;"></i></a></li>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <li><h5 class="dropdown-item title" href="tour.html"><b>Tour Miền Đông Nam Bộ</b></h5></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Đồng Nai</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Bà Rịa - Vũng Tàu</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Côn Đảo</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch TP. Hồ Chí Minh</a></li>
+                                        <li><a class="dropdown-item" href="tour.html">Du lịch Tây Ninh</a></li>
+                                        <li><a class="dropdown-item deco" href="#" style="font-size: 10px;">Xem Thêm<i class="bi bi-chevron-double-right" style="font-size: 10px;"></i></a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="b_hotel.html">Khách Sạn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="b_fticket.html">Vé Máy Bay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Góp ý</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-divider"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Đăng ký</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <div class="margin-bot"></div>
+        <!-- wrapnavbar -->
+        </section>
+        <!-- endwrapbar -->
+    </header>
+    <section class="">
+        <div class="banner">
+            <img src="./img/Background-phong-canh.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
+                <div class="form-caption">
+                    <form action="">
+                        <h3>Đặt Phòng Khách Sạn</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="from">Bạn Muốn Đi Đâu</label>
+                                <input type="text" class="form-control" placeholder="Điểm Đi">
+                            </div>
+                            <div class="col-6 col-md-4 pt-2">
+                                <label for="date">Ngày Đi</label>
+                                <input type="date" class="form-control" placeholder="Ngày Đi">
+                            </div>
+                            <div class="col-6 col-md-4 pt-2">
+                                <label for="date">Ngày Về</label>
+                                <input type="date" class="form-control" placeholder="Ngày Về">
+                            </div>
+                            <div class="col-12 col-md-4 pt-2">
+                                <label for="date">Số Lượng</label>
+                                <input type="number" class="form-control" placeholder="Số Lượng">
+                            </div>
+                            <div class="col-12 col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
+    <div class="container-fluid side-y">
+        <div class="row custom-body">
+            <div class="col-xs-12 col-md-3">
+                <div class="filters">
+                    <h3>Bộ Lọc</h3>
+                    <div class="filter-group">
+                        <h5>Hạng Sao</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input type="checkbox" id="star1">
+                                <label for="star1">1 sao</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" id="star2">
+                                <label for="star2">2 sao</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" id="star3">
+                                <label for="star3">3 sao</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" id="star4">
+                                <label for="star4">4 sao</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" id="star5">
+                                <label for="star5">5 sao</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr style="border: 3;">
+                    <div class="filter-group">
+                        <h5>Khu Vực</h5>
+                        <select class="form-select">
+                            <option selected disabled>Chọn khu vực</option>
+                            <option value="kv1">Khu vực 1</option>
+                            <option value="kv2">Khu vực 2</option>
+                            <option value="kv3">Khu vực 3</option>
+                        </select>
+                    </div>
+                    <hr style="border: 3;">
+                    <div class="filter-group">
+                        <h5>Loại hình nơi ở</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="type1">
+                            <label class="form-check-label" for="type1">Loại 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="type2">
+                            <label class="form-check-label" for="type2">Loại 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="type3">
+                            <label class="form-check-label" for="type3">Loại 3</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 bg-light">
+                <div class="title text-center pt-2">
+                <h3>Đặt Khách Sạn</h3>
+                </div>
+                <button class="card-custom mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-3 p-0">
+                        <img src="img/Background-phong-canh.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-7 overflow-auto">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Khu nghỉ dưỡng Centara Mirage Mũi Né</h5>
+                          <p class="card-text text-start">Combo 2N1Đ + Ăn sáng + Vui chơi công viên nước | 1.150.000 VND/Khách</p>
+                          <p class="card-text text-start"><small class="text-body-secondary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <a href="#" class="btn btn-primary mx-2">9.3</a>tuyệt vời<i class="bi bi-grip-vertical"></i>474 đánh giá
+                          </small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 card-f">
+                        <p class="mb-0">2.100.000đ</p>
+                        <a type="submit" class="btn btn-primary">Đặt ngay</a>
+                      </div>
+                    </div>
+                </button>
+                
+                <button class="card-custom mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-3 p-0">
+                        <img src="img/garden-city-beach-sunrise-clouds-5k-tr-1920x1080.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-7 overflow-auto">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Card title</h5>
+                          <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text text-start"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 card-f">
+                        <p class="mb-0">2.100.000đ</p>
+                        <a type="submit" class="btn btn-primary">Đặt ngay</a>
+                      </div>
+                    </div>
+                </button>
+
+                <button class="card-custom mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-3 p-0">
+                        <img src="img/nature wallpaper-12.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-7 overflow-auto">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Card title</h5>
+                          <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text text-start"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 card-f">
+                        <p class="mb-0">2.100.000đ</p>
+                        <a type="submit" class="btn btn-primary">Đặt ngay</a>
+                      </div>
+                    </div>
+                </button>
+
+                <button class="card-custom mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-3 p-0">
+                        <img src="img/da-lat-edensee-resortspa.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-7 overflow-auto">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Card title</h5>
+                          <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text text-start"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 card-f">
+                        <p class="mb-0">2.100.000đ</p>
+                        <a type="submit" class="btn btn-primary">Đặt ngay</a>
+                      </div>
+                    </div>
+                </button>
+
+                <button class="card-custom mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-3 p-0">
+                        <img src="img/anh-dep-Phu-Yen-5.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-7 overflow-auto">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Card title</h5>
+                          <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text text-start"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 card-f">
+                        <p class="mb-0">2.100.000đ</p>
+                        <a type="submit" class="btn btn-primary">Đặt ngay</a>
+                      </div>
+                    </div>
+                </button>
+
+                <button class="card-custom mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-3 p-0">
+                        <img src="img/yosemite-sunrise-from-tunnel-view-5k-nz-1920x1080.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-7 overflow-auto">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Card title</h5>
+                          <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text text-start"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 card-f">
+                        <p class="mb-0">2.100.000đ</p>
+                        <a type="submit" class="btn btn-primary">Đặt ngay</a>
+                      </div>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-new">
+      <section class="best_destination">
+          <div class="container">
+              <div class="title_besst_des pt-5">
+                  <h1>Các Khách Sạn Giảm Giá</h1>
+              </div>
+              <div class="container-fluid my-5">
+                  <div class="row">
+                      <div class="col-12 m-auto">
+                          <div class="owl-carousel owl-theme">
+                              <div class="item">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="img/da-lat-edensee-resortspa.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Dalat Edensee Resort & Spa, Đà Lạt, Lâm Đồng</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      </div>
+                                  </div>
+                              </div>
+          
+                              <div class="item">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="img/sherwood-suites-ho-chi-minh.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Sherwood Suites, TPHCM</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="img/Sheraton-Hanoi-Hotel.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Sheraton Hanoi, Hà Nội</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="img/la-veranda-resort-phu-quoc.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">LA Veranda Resort Phu Quoc, Kiên Giang</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="img/chicland-hotel-da-nang-beach.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Chicland Hotel Da Nang Beach, Đà Nẵng</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="card" style="width: 18rem;">
+                                      <img src="img/vinpearl-resort-spa-da-nang.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Vinpearl Resort & Spa, Đà Nẵng</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      </div>
+                                  </div>
+                              </div>
+          
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
+    <footer>
+        <p>Copyright © 2020 - All rights Reserved - Designed by QC</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

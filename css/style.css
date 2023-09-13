@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+}
+/* CSS tùy chỉnh */
+.custom-body {
+    width: 80% ;
+    margin: 0 auto !important; /* Để căn giữa nếu cần thiết */
+}
+.custom-body .bg{
+    width: 100%;
+    background-color: red;
+}
+div.head, .title_besst_des{
+    text-align: center;
+}
+.parallax1 {
+    background-image: url("../img/nature\ wallpaper-12.jpg");
+    min-height: 100%;
+}
+.parallax2 {
+    background-image: url("../img/R.jpg");
+    min-height: 60%;
+}
+.parallax3 {
+    background-image: url("../img/yosemite-sunrise-from-tunnel-view-5k-nz-1920x1080.jpg");
+    min-height: 40%;
+}
+.parallax4 {
+    background-image: url("../img/garden-city-beach-sunrise-clouds-5k-tr-1920x1080.jpg");
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Important*/
+}
+
+.head {
+    position: absolute;
+    color: #fff;
+    font-size: 500%;
+    top:50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
+}
+
+.head:hover{
+    color:transparent;
+}
+
+section div.banner img{
+    height: 400px;
+    object-fit: cover;
+}
+
+footer{
+    width: 100%;
+    background-color: #323232;
+    color: #f2f2f2;
+    font-size: 15px;
+    text-align: center;
+    height: 5vh;
+    padding-top: 5px;
+}
+
+.wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.card {
+    width: 600px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+.c-card{
+    margin: 45px;
+
+    width: 400px;
+}
+img.logo {
+    width: 50px;
+    height: 50px;
+}
+img.logo-2 {
+    width: 100px;
+    height: 100px;
+}
+.custom-dropdown-menu {
+    width: 800px;
+}
+
+li h5.title {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.dropdown-item {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+li a.deco {
+    color: blue;
+}
+
+div.navbar-collapse {
+    margin-left: 200px;
+    justify-content: center;
+}
+
+.margin-bot {
+    margin-bottom: 50px;
+}
+/* Login */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+div.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: url('../img/Background-phong-canh.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 480px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-box-reg{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 550px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form.contact-us input, textarea{
+    border-radius: 10px;
+}
+form.contact-us .btn-blog{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+}
+.form-caption {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-caption form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.form-caption h3,
+.form-caption label {
+    margin: 0;
+}
+
+.form-caption button {
+    margin-top: 10px;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.form-box-reg .inputbox{
+    width: 500px;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin-bottom: 15px;
+    font-size: 1.0em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button.login-btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+ /* thanh kẻ trong login */
+ .hr-with-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hr-with-text::before,
+.hr-with-text::after {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1px solid white;
+}
+
+.hr-with-text span {
+    position: relative;
+    color: white;
+    padding: 10px 10px;
+}
+.form-box i.bi{
+    font-size: 40px;
+    color: white;
+}
+.form-box-reg i.bi{
+    font-size: 40px;
+    color: white;
+}
+.gender{
+    text-decoration: none;
+}
+/* index */ 
+#carouselExampleIndicators .carousel-inner .carousel-item img{
+    background-repeat: no-repeat;
+    height: 100vh;
+    object-fit: cover;
+}
+.container-blog{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container-blog .card{
+    margin-left: 40px;
+    width: 80%;
+}
+.carousel-caption{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.carousel-caption .btn-round{
+    width: 150px;
+    margin: 20px;
+    border-radius: 50px;
+    border-color: #323232;
+    color:white;
+}
+.carousel-caption .btn-round a{
+    color: white;
+}
+.carousel-caption .btn-round:hover, .carousel-caption .btn-round:active, .carousel-caption .btn-round:focus{
+    background-color:#666;
+    color: white;
+}
+.side{
+    margin-top: 50px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.side-tour{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 15px;
+}
+.content-tour{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.side-tour h3{
+    font-size: 15px;
+}
+.side h3{
+    font-size: 20px;
+}
+.side .bi{
+    position: relative;
+    top: 10px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.rotate-icon {
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotate-icon i {
+    transform: rotate(-45deg);
+}
+.card-bi{
+    font-size: 24px;;
+}
+.c-card p{
+    padding-top: 18px;
+    font-size: 34px;
+    color: cadetblue;
+    font-weight: 600;
+}
+.c-card .card-btn{
+    position: relative;
+    width: 100%;
+    right: 10px;
+    margin-top: 25px;
+    border-radius: 50px;
+    border-color: blue;
+    color:white;
+}
+.price-list{
+    background-image: url("../img/Background-phong-canh.jpg");
+    background-size: cover;
+}
+.price-list .title{
+    background-color: #c3c0c0;
+}
+.side-y {
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+.filters{
+    background-color: #f1f1f1;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+/* CSS tùy chỉnh */
+.custom-wrapper {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.custom-wrapper .text-center {
+    background-color: #ffe4c4;
+}
+
+.custom-wrapper .title {
+    background-color: #c3c0c0;
+    padding: 10px;
+}
+.tag .btn{
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    font-size: 10px;
+}
+.card-custom{
+    position: relative;
+    width: 100%;
+}
+.card-custom img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-custom .overflow-auto, .card-body{
+    height: 200px;
+}
+.card-body p i.bi-star-fill, i.bi-star-half{
+    color: yellow;
+}
+button.card-custom{
+    border: 0;
+}
+button.card-custom:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 1);
+}
+.card-custom .card-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.filters-tour{
+    width: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    position: sticky;
+    top: 80px;
+}
+.filters-tour button{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.filters-tour input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border-color: blue;
+    margin-top: 10px;
+}
+.card-img-top {
+    height: 200px; /* Đặt chiều cao mong muốn cho hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh được cắt tỉa và điều chỉnh để phù hợp với kích thước */
+}
+.owl-theme .item {
+    margin: 20px;
+}
+.owl-theme .item:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height:500px;
+}
+.height img {
+    border-radius: 5px;
+    height: 452px;
+    object-fit: cover; /* Thay đổi giá trị kích thước theo ý muốn */
+}
+.height img:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+.width img {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+    height: 250px; /* Thay đổi giá trị kích thước theo ý muốn */
+}
+.width-2 img{
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+.width img:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+} 
+.width-2 img:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}  
+button a{
+    text-decoration: none;
+}
+@media (max-width: 576px) {
+    .head{
+        font-size: 200%;
+    }
+    /* Áp dụng chỉ trên điện thoại di động */
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form.search {
+        width: 150px;
+    }
+
+    .navbar-divider {
+        border-top: 2px solid #ccc;
+        max-width: 100%;
+    }
+
+    .custom-dropdown-menu {
+        width: 100%;
+    }
+
+    div.navbar-collapse {
+        margin: 0px;
+    }
+    footer p{
+        padding-top: 5px;
+        font-size: 10px;
+    }
+    .form-box{
+        height: 500px;
+        width: 350px;
+    }
+    .form-box-reg{
+        height: 100%;
+        width: 300px;
+    }
+    .form-box-reg .inputbox{
+        width: auto;
+    }
+    .form-caption {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        margin: 20px;   
+        margin-left: 0;
+        width: 90%;
+        height: 380px;
+    }
+    .side{
+        display: none;
+    }
+    section div.banner img{
+        height: 450px;
+        object-fit: cover;
+    }
+    .owl-carousel .item{
+        margin: 30px;
+        width: 100%;
+    }
+    .c-card{
+        margin: 10px;
+        width: 100%;
+    }
+    .c-card .card-btn{
+        position: relative;
+        width: 80px;
+        right: 20px;
+        margin-top: 25px;
+        border-color: blue;
+        color:white;
+    }
+    .filters{
+        margin-bottom: 15px;
+    }
+    button.card-custom{
+        margin-bottom: 10px;
+    }
+    .card-custom .card-f{
+        background-color: #ccc;
+    }
+    .card-f a{
+        margin-bottom: 10px;
+    }
+    .card-f p{
+        margin-top: 5px;
+    }
+    .wrapper {
+        background: none;
+    }
+    .filters-tour button, input{
+        width: 100%;
+    }
+    .side-tour{
+        display: none;
+    }
+
+    .height img {
+        border-radius: 5px;
+        height: 180px;
+        object-fit: cover; /* Thay đổi giá trị kích thước theo ý muốn */
+    }
+    .height img:hover{
+        border-radius: 5px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    }
+    .width img {
+        border-radius: 5px;
+        object-fit: cover;
+        height: 180px; /* Thay đổi giá trị kích thước theo ý muốn */
+    }
+    .width-2 img{
+        border-radius: 5px;
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    }
+    .width img:hover{
+        border-radius: 5px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    } 
+    .width-2 img:hover{
+        border-radius: 5px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    }  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .head{
+        font-size: 200%;
+    }
+    /* Áp dụng chỉ trên tablet */
+    .navbar-divider {
+        border-top: 2px solid #ccc;
+        max-width: 100%;
+    }
+
+    .custom-dropdown-menu {
+        width: 100%;
+    }
+
+    div.navbar-collapse {
+        margin: 0px;
+    }
+
+    .tour-search-form .input-field {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 50px;
+    }
+
+    .custom-button {
+        width: 205%;
+    }
+    .side{
+        display: none;
+    }
+    .c-card{
+        margin: 10px;
+        width: 100%;
+    }
+    footer p{
+        padding-top: 5px;
+        font-size: 10px;
+    }
+    .form-caption {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        margin-top: 60px;
+        width: 90%;
+        height: 250px;
+    }
+    .c-card .card-btn{
+        position: relative;
+        width: 80px;
+        right: 20px;
+        margin-top: 25px;
+        border-color: blue;
+        color:white;
+    }
+    .filters-tour button, input{
+        width: 100%;
+    }
+    .tour{
+        width: 90% ;
+        margin: 0 auto !important;
+    }
+    .card-f a{
+        font-size: 10px;
+    }
+    .card-f p{
+        font-size: 10px;
+    }
+}
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
